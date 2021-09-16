@@ -17,7 +17,6 @@
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
-
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
@@ -260,12 +259,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Escorts</h1>
+            <h1>dposits</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Escorts</li>
+              <li class="breadcrumb-item active">deposits</li>
             </ol>
           </div>
         </div>
@@ -279,50 +278,38 @@
           <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">All Escorts</h3>
+                <h3 class="card-title">All deposits</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                   <tr>
-                    <th>Num.</th>
-                    <th>Picture</th>
+                    <th>Date</th>
                     <th>Name</th>
-                    <th>age</th>
-                    <th>county</th>
-                    <th>Area</th>
-                    <th>Adds</th>
+                    <th>code</th>
+                    <th>Amount</th>
                     <th>Actions</th>
                   </tr>
                   </thead>
                   <tbody>
                   <tr>
-                    <td>1</td>
+                    <td>5/6/2021</td>
+                    <td>Grace</td>
+                    <td>mi57y43hkruh</td>
+                    <td>3000/=</td>
                     <td>
-                        <img src="dist/img/user2-160x160.jpg" style="height : 50px; width : 50px" class="img-circle elevation-2" alt="User Image">
-                    </td>
-                    <td>Jane</td>
-                    <td> 25</td>
-                    <td>Nairobi</td>
-                    <td>makadara</td>
-                    <td>10</td>
-                    <td>
-                      <a href="#" class="btn btn-warning">Activate</a>
-                      <a href="#" class="btn btn-primary"><i class="nav-icon fas fa-edit"></i></a>
-                      <a href="#" id="delete" class="btn btn-danger" ><i class="nav-icon fas fa-trash"></i></a>
+                      <a href="#" class="btn btn-primary"><i class="nav-icon fas fa-eye"></i></a>
                     </td>
                   </tr>
+
                   </tbody>
                   <tfoot>
                   <tr>
-                    <th>Num.</th>
-                    <th>Picture</th>
+                    <th>Date</th>
                     <th>Name</th>
-                    <th>age</th>
-                    <th>county</th>
-                    <th>Area</th>
-                    <th>Adds</th>
+                    <th>code</th>
+                    <th>Amount</th>
                     <th>Actions</th>
                   </tr>
                   </tfoot>
@@ -369,20 +356,7 @@
 <script src="dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
-<script src="dist/js/bootbox.min.js"></script>
 <!-- page script -->
-
-<script>
-  $(document).on("click", "#delete", function(e){
-  e.preventDefault();
-  var link = $(this).attr("href");
-  bootbox.confirm("Do you really want to delete this element ?", function(confirmed){
-    if (confirmed){
-        window.location.href = link;
-      };
-    });
-  });
-</script>
 <script>
   $(function () {
     $("#example1").DataTable({
