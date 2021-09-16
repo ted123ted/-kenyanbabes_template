@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Validation Form</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+ <!-- Navbar -->
+ <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+  <!-- Left navbar links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+    </li>
+    <li class="nav-item d-none d-sm-inline-block">
+      <a href="index.html" class="nav-link">Home</a>
+    </li>
+    <li class="nav-item d-none d-sm-inline-block">
+      <a href="#" class="nav-link">Contact</a>
+    </li>
+  </ul>
+</nav>
+<!-- /.navbar -->
+
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <!-- Brand Logo -->
+  <a href="index.html" class="brand-link">
+    <span class="brand-text font-weight-light">KenyanBabes</span>
+  </a>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <!-- Sidebar user panel (optional) -->
+    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      <div class="image">
+        <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+      </div>
+      <div class="info">
+        <a href="#" class="d-block">Admin</a>
+      </div>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <!-- Add icons to the links using the .nav-icon class
+             with font-awesome or any other icon font library -->
+        <li class="nav-item has-treeview menu-open">
+          <a href="./index.html" class="nav-link">
+            <i class="nav-icon fas fa-tachometer-alt"></i>
+            <p>
+              Dashboard
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+        </li>
+
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-folder"></i>
+            <p>
+              users
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="Users.html" class="nav-link">
+                <i class="far fa-file nav-icon"></i>
+                <p>users</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="addslider.html" class="nav-link">
+                <i class="far fa-file nav-icon"></i>
+                <p>add user</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-folder"></i>
+            <p>
+              Escorts
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="categories.html" class="nav-link">
+                <i class="far fa-file nav-icon"></i>
+                <p>Details</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="addfield.html" class="nav-link">
+                <i class="far fa-file nav-icon"></i>
+                <p>Add field</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-folder"></i>
+            <p>
+              Escort Adds
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="postadd.html" class="nav-link">
+                <i class="far fa-file nav-icon"></i>
+                <p>Post Add</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="adds.html" class="nav-link">
+                <i class="far fa-file nav-icon"></i>
+                <p>Adds</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-folder"></i>
+            <p>
+              Payments
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="orders.html" class="nav-link">
+                <i class="far fa-file nav-icon"></i>
+                <p>Paymnts</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
+    <!-- /.sidebar-menu -->
+  </div>
+  <!-- /.sidebar -->
+</aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Add</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Adds</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- left column -->
+          <main>
+            <div class=" container py-4 d-flex">
+                <div class=" p-5 mb-4 bg-light rounded-3">
+                    <h3>Personal information</h3>
+                    <div class="col-md-7 col-lg-8">
+                        <form class="needs-validation" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-5">
+                                    <label for="country" class="form-label">county</label>
+                                    <select class="form-select" id="country" required>
+                                        <option value="">Choose...</option>
+                                        <option>Nairobi</option>
+                                        <option>Mombasa</option>
+                                        <option>Kisumu</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a valid county.
+                                    </div>
+                                </div>
+    
+                                <div class="col-md-4">
+                                    <label for="state" class="form-label">city</label>
+                                    <select class="form-select" id="state" required>
+                                        <option value="">Choose...</option>
+                                        <option>Nairobi</option>
+                                        <option>Mombasa</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid state.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="address" class="form-label">Estate</label>
+                                    <input type="text" class="form-control" id="address" placeholder="1234 Main St"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Please enter your Estate Name.
+                                    </div>
+                                </div>
+                                <hr class="my-4">
+                                <h4 class=" mb-3">Gender</h4>
+                                <div class="my-3">
+                                    <div class="form-check ">
+                                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input"
+                                            checked required>
+                                        <label class="form-check-label" for="credit">Male</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="debit" name="paymentMethod" type="radio" class="form-check-input"
+                                            required>
+                                        <label class="form-check-label" for="debit">Female</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="paypal" name="paymentMethod" type="radio" class="form-check-input"
+                                            required>
+                                        <label class="form-check-label" for="paypal">TransGender</label>
+                                    </div>
+                                </div>
+                                <hr class="my-4">
+                                <h4 class=" mb-3">Services</h4>
+                                <div class="row">
+                                    <div class="col-s12-m6">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">jhvsiuv</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">jhvsiuv</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">jhvsiuv</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">jhvsiuv</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <label for="country" class="form-label">height</label>
+                                        <input type="text">
+                                    <div class="invalid-feedback">
+                                        Please select a valid county.
+                                    </div>
+                                </div>
+    
+                                <div class="col-md-4">
+                                    <label for="state" class="form-label">weight</label>
+                                        <input class="" type="text">
+                                    <div class="invalid-feedback">
+                                        Please provide a valid state.
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="state" class="form-label">Body-Type</label>
+                                    <select class="form-select" id="state" required>
+                                        <option value="">Choose...</option>
+                                        <option>Thick</option>
+                                        <option>petite</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid state.
+                                    </div>
+                                </div>
+                                <h4 class=" mb-3">Bust Size</h4>
+    
+                                <div class="row">
+                                    <div class="col-s12-m6">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Extra large</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Large</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Medium</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Small</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 class=" mb-3">Sexual orientation</h4>
+                                <div class="row">
+                                    <div class="col-s12-m6">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">jhvsiuv</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">jhvsiuv</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">jhvsiuv</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">jhvsiuv</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="my-4">
+                                <h4 class=" mb-3">Photos</h4>
+                                <div class="input-group mb-3">
+                                    <input type="file" multiple class="form-control" id="inputGroupFile02" >
+                                    <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                                </div>
+
+                            </div>
+                            <hr class="my-4">
+                            <h4 class=" mb-3">biography</h4>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                        style="height: 100px"></textarea>
+                                    <label for="floatingTextarea2">About you</label>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+    
+                            <button class="w-100 btn btn-primary btn-lg" type="submit">Submit</button>
+                        </form>
+                    </div>
+    
+                </div>
+        </main>
+          <!--/.col (left) -->
+          <!-- right column -->
+          <div class="col-md-6">
+
+          </div>
+          <!--/.col (right) -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.1.0-pre
+    </div>
+    <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- jquery-validation -->
+<script src="plugins/jquery-validation/jquery.validate.min.js"></script>
+<script src="plugins/jquery-validation/additional-methods.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<script>
+$(function () {
+  $.validator.setDefaults({
+    submitHandler: function () {
+      alert( "Form successful submitted!" );
+    }
+  });
+  $('#quickForm').validate({
+    rules: {
+      email: {
+        required: true,
+        email: true,
+      },
+      password: {
+        required: true,
+        minlength: 5
+      },
+      terms: {
+        required: true
+      },
+    },
+    messages: {
+      email: {
+        required: "Please enter a email address",
+        email: "Please enter a vaild email address"
+      },
+      password: {
+        required: "Please provide a password",
+        minlength: "Your password must be at least 5 characters long"
+      },
+      terms: "Please accept our terms"
+    },
+    errorElement: 'span',
+    errorPlacement: function (error, element) {
+      error.addClass('invalid-feedback');
+      element.closest('.form-group').append(error);
+    },
+    highlight: function (element, errorClass, validClass) {
+      $(element).addClass('is-invalid');
+    },
+    unhighlight: function (element, errorClass, validClass) {
+      $(element).removeClass('is-invalid');
+    }
+  });
+});
+</script>
+</body>
+</html>

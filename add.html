@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+    <title>Kenyan Babes</title>
+</head>
+
+<body style="color: rgb(53, 51, 51);">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" style="background-color: #78c2f7;">
+        <div class=" container-fluid">
+            <a class="navbar-brand" href="index.html">Kenyan Babes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="nav">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">account</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Nairobi </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"> Kasarani</a></li>
+                                <li><a class="dropdown-item" href="#"> Pangani </a></li>
+                                <li><a class="dropdown-item" href="#"> Westlands </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Mombasa </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Mtwapa</a></li>
+                                <li><a class="dropdown-item" href="#">Ndiani</a></li>
+                                <li><a class="dropdown-item" href="#">Nyali</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Kisumu </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                                <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                                <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+
+    <div class="container" style="padding-top: 50px;">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+            <div class="col-md-9 ftco-animate text-center">
+                <h2>Add form</h2>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class=" container py-4 d-flex">
+            <div class=" p-5 mb-4 bg-light rounded-3">
+                <h3>Personal information</h3>
+                <div class="col-md-7 col-lg-8">
+                    <form class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-5">
+                                <label for="country" class="form-label">county</label>
+                                <select class="form-select" id="country" required>
+                                    <option value="">Choose...</option>
+                                    <option>Nairobi</option>
+                                    <option>Mombasa</option>
+                                    <option>Kisumu</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid county.
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="state" class="form-label">city</label>
+                                <select class="form-select" id="state" required>
+                                    <option value="">Choose...</option>
+                                    <option>Nairobi</option>
+                                    <option>Mombasa</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="address" class="form-label">Estate</label>
+                                <input type="text" class="form-control" id="address" placeholder="1234 Main St"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Please enter your Estate Name.
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <h4 class=" mb-3">Gender</h4>
+                            <div class="my-3">
+                                <div class="form-check ">
+                                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input"
+                                        checked required>
+                                    <label class="form-check-label" for="credit">Male</label>
+                                </div>
+                                <div class="form-check">
+                                    <input id="debit" name="paymentMethod" type="radio" class="form-check-input"
+                                        required>
+                                    <label class="form-check-label" for="debit">Female</label>
+                                </div>
+                                <div class="form-check">
+                                    <input id="paypal" name="paymentMethod" type="radio" class="form-check-input"
+                                        required>
+                                    <label class="form-check-label" for="paypal">TransGender</label>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <h4 class=" mb-3">Services</h4>
+                            <div class="row">
+                                <div class="col-s12-m6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">jhvsiuv</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">jhvsiuv</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">jhvsiuv</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">jhvsiuv</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <label for="country" class="form-label">height</label>
+                                    <input type="text">
+                                <div class="invalid-feedback">
+                                    Please select a valid county.
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="state" class="form-label">weight</label>
+                                    <input class="" type="text">
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="state" class="form-label">Body-Type</label>
+                                <select class="form-select" id="state" required>
+                                    <option value="">Choose...</option>
+                                    <option>Thick</option>
+                                    <option>petite</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+                            <h4 class=" mb-3">Bust Size</h4>
+
+                            <div class="row">
+                                <div class="col-s12-m6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">Extra large</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">Large</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">Medium</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">Small</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class=" mb-3">Sexual orientation</h4>
+                            <div class="row">
+                                <div class="col-s12-m6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">jhvsiuv</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">jhvsiuv</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">jhvsiuv</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">jhvsiuv</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <h4 class=" mb-3">Photos</h4>
+                            <div class="input-group mb-3">
+                                <input type="file" class="form-control" id="inputGroupFile02">
+                                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="file" class="form-control" id="inputGroupFile02">
+                                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                            </div>
+                            <div class="file-upload-wrapper" style="border: 1px;">
+                                <input type="file" id="input-file-now" class="file-upload" />
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <h4 class=" mb-3">biography</h4>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">About you</label>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+
+                        <button class="w-100 btn btn-primary btn-lg" type="submit">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+    </main>
+    <hr><!-- Footer -->
+    <footer class="page-footer font-small blue pt-4 blog-footer">
+    
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+      
+              <!-- Content -->
+              <h5 class="text-uppercase">Footer Content</h5>
+              <p>Here you can use rows and columns to organize your footer content.</p>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none pb-3">
+      
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+      
+              <!-- Links -->
+              <h5 class="text-uppercase">Links</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!">Link 4</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+      
+              <!-- Links -->
+              <h5 class="text-uppercase">Links</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!">Link 4</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+        </div>
+        <!-- Footer Links -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2021 Copyright:
+          <a href="https://kenyanbabes.com/"> Kenyan babes</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
